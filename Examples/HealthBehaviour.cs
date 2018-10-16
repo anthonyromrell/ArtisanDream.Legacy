@@ -7,18 +7,18 @@ namespace ArtisanDream.Tools.Examples
 	public class HealthBehaviour : MonoBehaviour
 	{
 		public FloatBase HealthLevel;
-		private Image HealthImage;
+		private Image healthImage;
 	
 		// Use this for initialization
 		void Start ()
 		{
-			HealthImage = GetComponent<Image>();
+			healthImage = GetComponent<Image>();
 		}
 	
 		// Update is called once per frame
 		void Update ()
 		{
-			HealthImage.fillAmount = HealthLevel.Value;
+			healthImage.fillAmount = HealthLevel.Value;
 		}
 	}
 }
